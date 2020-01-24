@@ -1,1 +1,44 @@
 // Mixins Here
+//navmixin
+.navvy() {
+    background-color: @nav-bg;
+    font-color: @nav-font;
+    border: @nav-border;
+}
+.flexxy(@flex, @column, @center) {
+    display: @flex;
+    flex-direction: @column;
+    align-items: @center;
+
+}
+
+//colormixins
+
+.colors(@the-color: black, @bg-color: white) {
+    color: @the-color;
+    background-color: @bg-color;
+  }
+ 
+  //button
+  .bjj(@color: @btn-bg-color, @the-color: white, @width: 20rem, @height: 4.4rem, @radius: 1.5rem, @font-size: 1.8rem) {
+    .colors(@the-color, @color);
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    font-size: @font-size;
+    text-align: center;
+    line-height: @height;
+  
+    &:hover {
+      color:@btn-bg-color;
+      background-color: white;
+    }
+  }
+  
+  
+  //fontmixinss
+  
+  .font-setup (@font-family, @the-color:black) {
+    font-family: @font-family, sans-serif;
+    color: @font-color;
+  }

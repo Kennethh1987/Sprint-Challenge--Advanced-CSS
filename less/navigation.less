@@ -1,1 +1,57 @@
 // Navigation code here
+// Navigation code here
+.navv {
+  height: 10rem;
+  width: 100%;
+  .colors(@nav-font, @nav-bg);
+  border-bottom: 2px solid @nav-border;
+
+  .flexxy(flex, column,center);//flexbox
+  h1 {
+    margin: 1.3rem 0 1.9rem;
+    font-size: 4rem;
+  }//h1
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 41rem;
+
+    a {
+      color: @nav-font;
+      font-size: 1.6rem;
+      text-decoration: none;
+    }//aherf
+  }//links
+}//nav
+
+
+.navv {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 75%;
+  
+
+
+ a {
+  float: left;
+  display: block;
+
+  text-align: center;
+  padding:1%;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+ &:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+}
